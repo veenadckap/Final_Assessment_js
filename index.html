@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invertory Dashboard</title>
+    <!-- ---------------------------Style sheet-------------------- -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ----------------------Google font----------------------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+        <!-- ----------------------BarChart---------------------- -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+    <!-- ---------------------------------------firebase cdn--------------------------------- -->
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js"></script>
+</head>
+
+<body>
+    <!-- --------------Navbar------------------------------------- -->
+    <nav>
+        <div class="container nav_container">
+            <div class="nav_text">
+                <a href="#">
+                    <img src="notepad.png" alt="" srcset="">
+                    <h4>DCKAP Palli Inventory </h4>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- -------------------------Product card and form----------------------------------- -->
+    <div class="highest_quantity_Products">
+
+           <h1>DashBoard</h1>
+        <div class="product_lists">
+     
+        </div>
+
+        <div class="buttons">
+            <button class="add" id="addProduct" type="button">Add products</button>
+            <button class="update" id="updateProduct" type="button">Update Inventory</button>
+        </div>
+
+        <div id="formContainer"></div>
+
+    </div>
+    
+    <div class="barChart">
+      <p>Count</p>
+      <canvas id="myChart" style="width:100%;max-width:800px"></canvas>
+    </div>
+    
+    
+    <div class="data_table">
+       <div id="table" class="table">
+       
+       </div>
+    </div>
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>

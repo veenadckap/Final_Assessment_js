@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+     color:#666666;
+
+}
+body ,html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background-color: #E7E8ED;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.7;
+    /* overflow: hidden; */
+}
+
+/* ----------------------------Navbar-------------------------------------------------- */
+
+nav {
+    width: 100vw;
+    height: 12%;
+    position: fixed;
+    top: 0;
+    z-index: 11;
+    background-color: #fff; 
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.nav_container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem; 
+}
+
+.container a {
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.container a img {
+    width: 5%;
+    margin-right: 8px; 
+}
+
+.nav_text {
+    display: flex;
+    align-items: center;
+}
+
+
+/* -------------------------------highest_quantity_Products--------------------------------------------------- */
+
+.highest_quantity_Products{
+    position:relative;
+    top: 5rem;
+    height: 70vh;
+    margin-bottom: 5rem;
+}
+.highest_quantity_Products  h1{
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    top: 4rem;
+    padding-left: 7%;
+}
+
+.product_lists{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+   
+    gap: 5rem;
+    height: 100%;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.buttons button {
+  
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.highest_quantity_Products .buttons .add{
+      background-color: #4CAF50;
+}
+.highest_quantity_Products .buttons .update{
+    background-color: #17A2B7;
+}
+
+/* -------------------------input error--------------------------------------------- */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(75, 68, 68, 0.5); 
+    z-index: 999; 
+}
+
+/* Form Popup */
+.form-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.95); 
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000; 
+    max-width: 430px;
+    width: 100%;
+    border-radius: 8px;
+    opacity: 1; 
+    transition: opacity 0.3s ease-in-out; 
+}
+
+/* Title Styling */
+.form-popup h2 {
+    margin-top: 0;
+    font-size: 19px;
+    color: #666666;
+    font-weight: 700;
+}
+
+/* Input Styling */
+.form-popup input {
+    display: block;
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-popup .formButton, 
+.title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+
+.form-popup button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    font-size: 1em;
+    margin: 0 5px;
+}
+
+.formSubmit {
+    background-color: #0056b3;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.close-button svg {
+    width: 16px;
+    height: 16px;
+    color: #333;
+}
+
+/* Shaking Animation */
+.shake {
+    animation: shake 0.5s;
+    border: 2px solid red; 
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+/* --------------------------Chart Bar---------------------------------------- */
+.barChart{
+    display: flex;
+    justify-content: center;
+    width: 78%;
+    margin-top: 20%;
+    background: #fff;
+    margin-left: 12%;
+    height: 75vh;
+    border-radius: 8px;
+    margin-bottom: 5rem;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+                rgba(17, 17, 26, 0.1) 0px 16px 56px, 
+                rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+.barChart p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(269deg);
+    
+}
+/* --------------------------Table---------------------------------- */
+
+h1 {
+    text-align: center;
+}
+.table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+table {
+    width: 80%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 3px solid #ddd;
+    padding: 15px;
+}
+th {
+    background-color: #070707;
+    color: #fff;
+    border-left: 1px solid #fff;
+}
+.button-name {
+    align-items: center;
+    appearance: none;
+    background-color: #FCFCFD;
+    border-radius: 4px;
+    border-width: 0;
+    box-sizing: border-box;
+    color: #36395A;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono", monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s, transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 18px;
+    border: 1px solid black;
+}
+.button-name:hover {
+    box-shadow: rgba(45, 35, 66, 0.3) 0 2px 8px, rgba(45, 35, 66, 0.2) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+.button-name:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+}
+/* -----------------------------------card------------------------------------------ */
+.product_card {
+    width: 24%;
+    background-color: #fff;
+    height: 35%;
+    padding: 16px;
+    background-color: #FFFFFF;
+    border-left: 4px solid;
+    border-left-color: rgba(0, 255, 0, 0.5);
+}
+.product_card h2{
+    font-weight: 700;
+}
